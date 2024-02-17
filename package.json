@@ -14,7 +14,7 @@
     "prettier": "prettier --write --ignore-unknown .",
     "prettier:check": "prettier --check --ignore-unknown .",
     "test": "pnpm lint && pnpm prettier:check",
-    "beast": "bbz nx"
+    "namo": "namo"
   },
   "git": {
     "pre-commit": "lint-staged"
@@ -29,8 +29,7 @@
     "geist": "^1.0.0",
     "next": "14.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "sharp": "^0.33.2"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/container-queries": "^0.1.1",
