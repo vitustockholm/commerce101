@@ -44,7 +44,7 @@ package-lock.json
 /package-lock.json
 
 # bug fix auto-prettier free space left
-lib/shopify/queries/*
+/lib/shopify/queries/*
 # vercel
 /.vercel
 .vercel
