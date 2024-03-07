@@ -1,16 +1,22 @@
-import clsx from 'clsx';
+// import clsx from 'clsx';
+import Image from 'next/image'; // Import next/image
+import Imagename from '/700x700.png';
 
-export default function LogoIcon(props: React.ComponentProps<'svg'>) {
+export default function LogoIcon() {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      aria-label={`${process.env.SITE_NAME} logo`}
-      viewBox="0 0 32 28"
-      {...props}
-      className={clsx('h-4 w-4 fill-black dark:fill-white', props.className)}
-    >
-      <path d="M21.5758 9.75769L16 0L0 28H11.6255L21.5758 9.75769Z" />
-      <path d="M26.2381 17.9167L20.7382 28H32L26.2381 17.9167Z" />
-    </svg>
+    <>
+      {' '}
+      <div tw="flex h-full w-full flex-col items-center justify-center bg-white">
+        <div tw="flex flex-none items-center justify-center border border-neutral-700 h-[60px] w-[60px] rounded-2xl">
+          <Image
+            src={Imagename} // Replace "/path/to/imagelogo.png" with the actual path to your image
+            className="h-4 h-[60px] w-4 w-[60px] rounded-xl fill-black dark:fill-white"
+            alt="logo"
+            width={60} // Set the width of the image
+            height={60} // Set the height of the image
+          />
+        </div>
+      </div>
+    </>
   );
 }
